@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OLanchão</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- GRID AREA -->
+
+    <div class="container-fluid">
+      <!-- HEADER -->
+      <div class="g-col-6 g-col-md-4" id="header">
+        <nav class="navbar navbar-expand-lg bg-black">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">OLanchão</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cardápio</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- SIDE -->
+      <div class="g-col-6 g-col-md-4" id="side">
+        <img src="./imagem1.jpg" alt="lanche" id="imgSide" />
+      </div>
+      <!-- CONTENT -->
+      <div class="g-col-6 g-col-md-4" id="content">
+        <form class="lanche">
+          <h1 class="card">Monte seu lanche</h1>
+          <!-- DADOS DA ENTREGA -->
+          <h3 class="dados">Dados da Entrega:</h3>
+          <div class="entrega">
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm"
+                >Nome</span
+              >
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+                name="name"
+              />
+            </div>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm"
+                >Endereço</span
+              >
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+                name="end"
+              />
+            </div>
+          </div>
+          <h3 class="paes">Escolha o seu pão:</h3>
+          <div class="select">
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              name="bread"
+            >
+              <option selected>Tipo de pão</option>
+              <option value="Hambúguer">Hambúguer</option>
+              <option value="Francês">Francês</option>
+              <option value="Sete grãos">Sete grãos</option>
+            </select>
+          </div>
+          <!-- TIPO DE CARNE -->
+          <h3 class="carne">Escolhe o seu tipo de carne:</h3>
+          <div class="tipo-carne">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+                value="Carne"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Carne
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+                value="Frango"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Frango
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+                value="Vegano"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Vegano
+              </label>
+            </div>
+          </div>
+
+          <!-- SALADA -->
+          <h3 class="saladas">Salada:</h3>
+          <div class="saladas">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Alface"
+                id="flexCheckDefault"
+                name="salad"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Alface
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Tomate"
+                id="flexCheckDefault"
+                name="salad"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Tomate
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Picles"
+                id="flexCheckDefault"
+                name="salad"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Picles
+              </label>
+            </div>
+          </div>
+          <!-- OBSERVAÇÕES -->
+          <h3 class="obs">Observações:</h3>
+          <div class="comments">
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea"
+                name="obs"
+              ></textarea>
+            </div>
+          </div>
+          <!-- BUTTON -->
+          <div class="btnContainer">
+            <button class="btn btn-danger" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+      <!-- SIDE RIGHT-->
+      <div class="g-col-6 g-col-md-4" id="sideRight">
+        <img src="./imagem2.jpg" alt="lanche feito" id="imgRight" />
+      </div>
+      <!-- FOOTER -->
+      <div class="g-col-6 g-col-md-4" id="footer">
+        <a href="#" id="rede1"
+          ><img src="./teste-removebg-preview.png" alt="logo face" id="face"
+        /></a>
+        <h2 class="logo">O Melhor da Região</h2>
+        <a href="#" id="rede2"
+          ><img src="./teste2-removebg-preview.png" alt="logo insta" id="insta"
+        /></a>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
